@@ -210,5 +210,5 @@ void loop(void) {
   // now that we have the readings, we can publish them to the cloud
   String temperature = String(fahrenheit); // store temp in "temperature" string
   Particle.publish("temperature", temperature, PRIVATE); // publish to cloud
-  delay(5000); // 5 second delay
+  delay(30000); // 5 min delay
 }

@@ -208,7 +208,7 @@ void loop(void) {
   Serial.println(" Fahrenheit");
 
   // now that we have the readings, we can publish them to the cloud
-  String temperature = String(fahrenheit); // store temp in "temperature" string
+  String temperature = String(celsius); // store temp in "temperature" string change word, celsius or farenheit
   Particle.publish("temperature", temperature, PRIVATE); // publish to cloud
   delay(30000); // 5 min delay
 }
